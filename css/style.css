@@ -35,6 +35,8 @@ body {
     background-color: var(--header-background-color);
     grid-area: header;
     padding: 1rem;
+    z-index: 1;
+    box-shadow: 0px 1px 4px #9DB2BF;
 }
 
 .header-top {
@@ -46,11 +48,11 @@ body {
 }
 
 
-img{
+img {
     max-width: 4rem;
 }
 
-input{
+input {
     background-color: var(--content-background-color);
     border-radius: 10px;
     padding: 9px;
@@ -60,17 +62,20 @@ input{
     font-size: large;
 }
 
-button[title="Search"]{
+button[title="Search"] {
     margin-right: 4rem;
 }
 
 .search-bar {
-    width: 100%; 
+    width: 100%;
+    margin-left: 2rem;
 }
 
 .search-bar input {
-    width: 100%; /* Set the input element to cover the available space */
+    width: 100%;
+    /* Set the input element to cover the available space */
 }
+
 /* div.header-top>* {
 } */
 
@@ -117,9 +122,17 @@ div.header-bottom>* {
     grid-area: sidebar;
     text-align: start;
     padding: 1rem;
+    width: 11rem;
 }
 
-div.sidebar>* {
+.sticky-container {
+    position: sticky;
+    top: 0;
+    /* background-color: red; */
+    margin-top: 4rem;
+}
+
+div.sticky-container>* {
     display: flex;
     margin: 1rem;
     align-items: center;
@@ -128,11 +141,13 @@ div.sidebar>* {
 }
 
 .settings {
-    padding-top: 5rem;
+    margin-top: 5rem;
+    /* padding-top: 5rem; */
 }
 
 .content {
     grid-area: content;
+    position: relative;
 }
 
 .projects {
@@ -212,4 +227,21 @@ button {
 
 button:hover {
     color: #F05454;
+}
+
+.sticky-container div:hover {
+    background-color: white;
+    color: var(--sidebar-background-color);
+    padding: .4rem;
+    border-radius: 1rem;
+    transition: color .3s ease-in-out;
+    font-weight: bold;
+}
+
+.header-bottom .material-symbols-outlined:hover {
+    background-color: #9DB2BF;
+    color: aquamarine;
+    padding: .8rem;
+    border-radius: 1rem;
+    transition: color .3s ease-in-out;
 }
