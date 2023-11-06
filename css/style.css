@@ -15,6 +15,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1rem;
+    line-height: 1.1rem;
     font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -40,7 +41,33 @@ body {
     /* background-color: lightblue; */
     display: flex;
     justify-content: end;
+    align-items: center;
+    gap: 10px;
 }
+
+img{
+    max-width: 4rem;
+}
+
+input{
+    background-color: var(--content-background-color);
+    border-radius: 10px;
+    padding: 9px;
+    /* width: clamp(200px, 50%, 400px); */
+    border: none;
+    outline: none;
+    font-size: large;
+}
+
+.search-bar {
+    width: 50%; 
+}
+
+.search-bar input {
+    width: 100%; /* Set the input element to cover the available space */
+}
+/* div.header-top>* {
+} */
 
 .header-bottom {
     display: flex;
@@ -49,6 +76,10 @@ body {
     margin-top: 1.5rem;
     font-size: 1.6rem;
     font-weight: bold;
+}
+
+.header-bottom .material-symbols-outlined {
+    font-size: 2rem;
 }
 
 .header-bottom> :first-child {
@@ -72,6 +103,10 @@ div.sidebar>* {
     align-items: center;
     gap: .4rem;
     color: white;
+}
+
+.settings {
+    padding-top: 5rem;
 }
 
 .content {
@@ -99,7 +134,7 @@ div.projects>* {
     flex-direction: column;
     /* align-items: end; */
     /* background-color: rgb(255, 182, 182); */
-    justify-content:start;
+    justify-content: start;
     width: 230px;
     overflow: auto;
     /* align-self: bottom; */
@@ -151,4 +186,8 @@ button {
     border-style: none;
     background-color: white;
     color: var(--sidebar-background-color);
+}
+
+button:hover {
+    color: #F05454;
 }
