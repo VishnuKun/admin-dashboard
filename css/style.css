@@ -158,11 +158,18 @@ div.sticky-container>* {
     padding: 1rem;
 }
 
-div.projects>* {
+.projects div {
     border-radius: 10px;
     border-left: 8px solid #212A3E;
     background-color: var(--projects-background-color);
     padding: 10px;
+}
+
+.your-projects {
+    font-size: 1.3rem;
+  text-align: start;
+  margin-left: 1.3rem;
+  margin-top: 4rem;
 }
 
 .right-side-bar {
@@ -244,4 +251,8 @@ button:hover {
     padding: .8rem;
     border-radius: 1rem;
     transition: color .3s ease-in-out;
+}
+
+input:hover, input:focus {
+   outline: 1px solid #212A3E;
 }
