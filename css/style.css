@@ -45,6 +45,7 @@ body {
     gap: 10px;
 }
 
+
 img{
     max-width: 4rem;
 }
@@ -59,8 +60,12 @@ input{
     font-size: large;
 }
 
+button[title="Search"]{
+    margin-right: 4rem;
+}
+
 .search-bar {
-    width: 50%; 
+    width: 100%; 
 }
 
 .search-bar input {
@@ -80,6 +85,23 @@ input{
 
 .header-bottom .material-symbols-outlined {
     font-size: 2rem;
+}
+
+.greetings {
+    display: flex;
+    flex-direction: row;
+}
+
+.greetings img {
+    max-width: 8rem;
+}
+
+.greetings h6 {
+    margin-bottom: 0;
+}
+
+.greetings h5 {
+    margin-top: .5rem;
 }
 
 .header-bottom> :first-child {
