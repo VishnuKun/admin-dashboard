@@ -158,11 +158,22 @@ div.sticky-container>* {
     padding: 1rem;
 }
 
-.projects div {
+.projects > div {
     border-radius: 10px;
     border-left: 8px solid #212A3E;
     background-color: var(--projects-background-color);
     padding: 10px;
+}
+
+.projects-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 13px;
+}
+
+.projects-icons .material-symbols-outlined:hover {
+    color: rgb(65, 173, 255);
 }
 
 .your-projects {
