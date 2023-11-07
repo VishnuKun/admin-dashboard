@@ -167,9 +167,9 @@ div.sticky-container>* {
 
 .your-projects {
     font-size: 1.3rem;
-  text-align: start;
-  margin-left: 1.3rem;
-  margin-top: 4rem;
+    text-align: start;
+    margin-left: 1.3rem;
+    margin-top: 4rem;
 }
 
 .right-side-bar {
@@ -236,7 +236,7 @@ button:hover {
     color: #F05454;
 }
 
-.sticky-container div:hover {
+.sticky-container div:hover:not(.space) {
     background-color: white;
     color: var(--sidebar-background-color);
     padding: .4rem;
@@ -247,12 +247,39 @@ button:hover {
 
 .header-bottom .material-symbols-outlined:hover {
     background-color: #9DB2BF;
-    color: aquamarine;
+    color: rgb(255, 255, 255);
     padding: .8rem;
     border-radius: 1rem;
     transition: color .3s ease-in-out;
 }
 
-input:hover, input:focus {
-   outline: 1px solid #212A3E;
+input:hover,
+input:focus {
+    outline: 1px solid #212A3E;
+}
+
+
+.dash-board {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    font-size: 1.2rem;
+    align-content: flex-start;
+    gap: 10px;
+}
+
+div.dash-board>* {
+    padding: 0;
+    margin: 0;
+}
+
+.dash-board .material-symbols-outlined {
+    font-size: 2.2rem;
+
+}
+
+.space {
+    height: 7rem;
 }
